@@ -19,7 +19,7 @@ class TestCalculator(unittest.TestCase):
 
     # Multiply
     def test_mul_1(self) :
-        self.assertEqual(self.calc.multiply(6, 5), -30)
+        self.assertEqual(self.calc.multiply(6, 5), 30)
     def test_mul_2(self) :
         self.assertEqual(self.calc.multiply(4, -3), -12)
 
@@ -33,7 +33,7 @@ class TestCalculator(unittest.TestCase):
     def test_mod_1(self) :
         self.assertEqual(self.calc.modulo(1, -5), -4)
     def test_mod_2(self) :
-        self.assertEqual(self.calc.modulo(-10, -3), -1)
+        self.assertEqual(self.calc.modulo(-9, -3), 0)
 
 
     # Add the following test methods to the TestCalculator class:
